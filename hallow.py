@@ -15,7 +15,7 @@ def setbasecolors():
     bridge = Bridge(device={'ip':'192.168.1.5'}, user={'name':'newdeveloper'})
     lights = bridge.light.get({'which':'all'})
     for light in lights['resource']:
-        resource = {'which':light['id'],'data':{'state':{'on':True, 'hue':huelist[light['id']-1] ,'sat':255, 'bri':10}}}
+        resource = {'which':light['id'],'data':{'state':{'on':True, 'hue':huelist[light['id']-1] ,'sat':255, 'bri':50}}}
         bridge.light.update(resource)
 
 if __name__ == '__main__':
@@ -36,8 +36,8 @@ if __name__ == '__main__':
                   t = Thread(target=witch)
                   t.start()
                   time.sleep(10)
+                  setbasecolors()
 
-              setbasecolors()
               name = "spooky_drone"
               drone(name)
 

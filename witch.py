@@ -12,10 +12,10 @@ def witch():
 
     if currfname == "witch":
         for _ in range(5):
-            resource = {'which':1,'data':{'state':{'on':True, 'hue':36210, 'alert':'select'}}}
+            resource = {'which':1,'data':{'state':{'on':True, 'hue':25500, 'bri':255, 'alert':'select'}}}
             bridge.light.update(resource)
         for _ in range(5):
-            resource = {'which':1,'data':{'state':{'on':True, 'hue':46920, 'alert':'select'}}}
+            resource = {'which':1,'data':{'state':{'on':True, 'hue':54000, 'bri':255, 'alert':'select'}}}
             bridge.light.update(resource)
 
     if currfname == "cat":

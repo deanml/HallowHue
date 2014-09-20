@@ -11,5 +11,5 @@ def drone(soundfname):
     for _ in range(24):
         time.sleep(1)
         for light in lights['resource']:
-            resource = {'which':light['id'],'data':{'state':{'on':True, 'hue':25500 ,'sat':255, "alert":"select"}}}
+            resource = {'which':light['id'],'data':{'state':{'on':True, 'hue':25500 ,'sat':180, "alert":"select"}}}
             bridge.light.update(resource)
