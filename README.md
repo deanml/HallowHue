@@ -1,3 +1,5 @@
+![Python application](https://github.com/deanml/HallowHue/workflows/Python%20application/badge.svg)
+
 HallowHue
 =========
 
